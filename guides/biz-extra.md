@@ -1,3 +1,25 @@
+# More command-line hackery with the Chicago business data
+
+<!--ts-->
+   * [More command-line hackery with the Chicago business data](biz-extra.md#more-command-line-hackery-with-the-chicago-business-data)
+      * [Intro](biz-extra.md#intro)
+      * [Using ripgrep to do a little data cleaning](biz-extra.md#using-ripgrep-to-do-a-little-data-cleaning)
+         * [grep oopsies!](biz-extra.md#grep-oopsies)
+         * [Squeezing consecutive whitespace](biz-extra.md#squeezing-consecutive-whitespace)
+            * [Header cleanup](biz-extra.md#header-cleanup)
+      * [Extra fun](biz-extra.md#extra-fun)
+         * [Pharma reps](biz-extra.md#pharma-reps)
+         * [Grocery stores and food desserts](biz-extra.md#grocery-stores-and-food-desserts)
+         * [Business owners](biz-extra.md#business-owners)
+         * [Joining](biz-extra.md#joining)
+
+<!-- Added by: dan, at: Wed Jul 22 23:33:05 CDT 2020 -->
+
+<!--te-->
+
+## Intro
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem amet recusandae totam, id quas, consequuntur optio consequatur obcaecati harum, aperiam vero, officia! Reiciendis, expedita earum nulla vitae accusantium eos! Qui.
 
 
 ## Using ripgrep to do a little data cleaning

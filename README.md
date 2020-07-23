@@ -11,8 +11,8 @@ I'll be using a real-world dataset – the city of Chicago business license data
 
 ## Dev notes
 
-The table of contents for each guide is generated with [gh-md-toc](), e.g.
+The table of contents for each guide is generated with [gh-md-toc](https://www.google.com/search?q=gh-md-toc&oq=gh-md-toc&aqs=chrome..69i57.4320j0j1&sourceid=chrome&ie=UTF-8), e.g.
 
 ```sh
-$ gh-md-toc --insert --no-backup guides/chicago-intro.md 
+$ gh-md-toc --insert --no-backup *.md
 ```

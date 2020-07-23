@@ -1,5 +1,21 @@
 # Painlessly moving from CSV to SQLite
 
+<!--ts-->
+   * [Painlessly moving from CSV to SQLite](csv2sqlite.md#painlessly-moving-from-csv-to-sqlite)
+      * [Intro](csv2sqlite.md#intro)
+      * [Tools and concepts](csv2sqlite.md#tools-and-concepts)
+      * [Using csvs-to-sqlite](csv2sqlite.md#using-csvs-to-sqlite)
+      * [SQL vs ripgrep/xsv hacks](csv2sqlite.md#sql-vs-ripgrepxsv-hacks)
+         * [Creating a list/view of active licenses](csv2sqlite.md#creating-a-listview-of-active-licenses)
+         * [Creating a list/view of tobacco-related licenses](csv2sqlite.md#creating-a-listview-of-tobacco-related-licenses)
+         * [Group count by license_description](csv2sqlite.md#group-count-by-license_description)
+         * [Group count by license by year](csv2sqlite.md#group-count-by-license-by-year)
+
+<!-- Added by: dan, at: Wed Jul 22 23:33:06 CDT 2020 -->
+
+<!--te-->
+
+
 
 ## Intro 
 
