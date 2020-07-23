@@ -51,6 +51,7 @@ I also make brief use of these common *nix tools and commands:
 - `cd`
 - `cat`
 - `head`
+- `sed`
 - `sort`
 - `tr`
 - `uniq`
@@ -323,7 +324,7 @@ $ raw_licenses.csv \
 Since we're mucking about with the header row independently, let's transform it so that all spaces are changed to an underscore character, and all letters are lowercased – this will make future data wrangling steps, especially in SQL, easier to type out:
 
 ```sh
-head -n 1 raw_licenses.csv  \
+$ head -n 1 raw_licenses.csv  \
     | rg ' +' -r '_' \
     | tr '[:upper:]' '[:lower:]' \
     > licenses.csv
@@ -424,7 +425,7 @@ The description reads as thus:
 $ curl -Lo raw_owners.csv 'https://data.cityofchicago.org/api/views/ezma-pppn/rows.csv?accessType=DOWNLOAD'
 ```
 
-We do similar but lighter wrangling thatn we did with `raw_licenses.csv` (there are no dates to reformat):
+We do similar but lighter wrangling than we did with `raw_licenses.csv` (there are no dates to reformat):
 
 
 ```sh
@@ -434,8 +435,11 @@ $ head -n 1 raw_owners.csv  \
     | tr '[:upper:]' '[:lower:]' \
     > owners.csv
 
+# unfortunately, we can't squeeze whitespace using rg, because not
+# every record in the owners dataset has whitespace
+# so we use sed instead (or gsed, for macos which comes with an old version of sed by default)
 $ tail -n+2 raw_owners.csv \
-   | rg ' +' -r ' ' \
+   | gsed -r 's/' \
    >> owners.csv
 ```
 
